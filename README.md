@@ -10,7 +10,7 @@ exist data, as it does pretty aggressive resizing of the spreadsheet. It is desi
 the old history, but there is no guarantee. Also be sure that Spreadsheet has supported template.
 Otherwise you probably loose your data. Use this tool on your own risk.!!!
 
-This script uses https://github.com/burnash/gspread, so you should install it before running the script. 
+This script uses [gspread]https://github.com/burnash/gspread, so you should install it before running the script.
 Just type:
 ```sh
 pip install gspread
@@ -21,11 +21,11 @@ Or:
 ```sh
 easy_install gspread
 ```
-Thanks to [burnash](https://github.com/burnash) for providing https://github.com/burnash/gspread.
+Thanks to [burnash](https://github.com/burnash) for providing [gspread]https://github.com/burnash/gspread.
 
 # Using the script:
 
-Before running the script, the spreadsheet should be created. OAuth2 currently is not supported by https://github.com/burnash/gspread, so the scrpt doesn't support it either.
+Before running the script, the spreadsheet should be created. OAuth2 currently is not supported by [gspread]https://github.com/burnash/gspread, so the scrpt doesn't support it either.
 
 First row of the worksheet should have headers - currently hgSpreadsheetReporter doesn't support creating it.
 
