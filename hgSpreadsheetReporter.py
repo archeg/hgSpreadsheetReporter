@@ -58,9 +58,16 @@ def getConfig():
     """ Reads the config from the configuration file.
     :return: configuration parser.
     """
-    import ConfigParser, os
+    import ConfigParser
+
     parser = ConfigParser.RawConfigParser()
-    parser.readfp(open("config.ini"))
+    try:
+        parser.readfp(open("config.ini"))
+    except IOError:
+        print "Are you sure you have config.ini? You should create it if you don't. You can use config_example.ini " \
+              "as example"
+        exit(0)
+
     return parser
 
 # Sections to be ignored by project searcher. All other sections are considered project names.
