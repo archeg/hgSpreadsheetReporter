@@ -10,16 +10,18 @@ exist data, as it does pretty aggressive resizing of the spreadsheet. It is desi
 the old history, but there is no guarantee. Also be sure that Spreadsheet has supported template.
 Otherwise you probably loose your data. Use this tool on your own risk.!!!
 
-This script uses [gspread] (https://github.com/burnash/gspread), so you should install it before running the script.
+This script uses [gspread] (https://github.com/burnash/gspread) and [dateutil] (http://labix.org/python-dateutil), so you should install it before running the script.
 Just type:
 ```sh
 pip install gspread
+pip install python-dateutil
 ```
 
 Or:
 
 ```sh
 easy_install gspread
+easy_install python-dateutil
 ```
 Thanks to [burnash](https://github.com/burnash) for providing [gspread] (https://github.com/burnash/gspread).
 
